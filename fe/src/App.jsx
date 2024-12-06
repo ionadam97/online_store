@@ -1,17 +1,16 @@
 import React from "react";
-import NavBar from "./components/navigation/NavBar";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navigation from "./components/navigation/Navigation";
 import { ThemeProvider } from "@mui/material";
 import CustomTheme from "./CustomTheme";
 
 function App() {
   return (
-    <>
-      <ThemeProvider theme={CustomTheme}>
-        <NavBar />
-
-
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={CustomTheme}>
+      <Router>
+        <Navigation />
+      </Router>
+    </ThemeProvider>
   );
 }
 
