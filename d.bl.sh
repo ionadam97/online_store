@@ -14,6 +14,6 @@ gblcmd_fe_install(){
 gblcmd_fe_build(){
     local fe_path=$(git rev-parse --show-toplevel)/fe
     pushd "$fe_path" > /dev/null
-    npm run build 
+    npm run build
     popd > /dev/null
 }

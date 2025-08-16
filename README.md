@@ -2,24 +2,35 @@
 
 ## Virtual Environment
 
-To manage dependencies in an isolated Python environment, follow these steps:
+To manage dependencies in an isolated Python environment:
 
-* Activate the virtual environment:
-```bash
-source env/bin/activate
-```
+1. **Activate the virtual environment:**
 
-* Verify that the virtual environment is active:
-```bash
-echo $VIRTUAL_ENV
-```
+   ```bash
+   source env/bin/activate
+   ```
 
-* Install all dependencies:
-```bash
-pip install -r scb/web/test_e2e/requirements.pip3
-```
+2. **Verify activation:**
 
-* Deactivate the virtual environment:
+   ```bash
+   echo $VIRTUAL_ENV
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   pip install -r scb/web/test_e2e/requirements.pip3
+   ```
+
+4. **Deactivate the environment:**
+   ```bash
+   deactivate
+   ```
+
+## Backend
+
+To start the backend server:
+
 ```bash
-deactivate
+python be/manage.py runserver
 ```
